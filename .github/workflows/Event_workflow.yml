@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Log issue event
         run: |
-          echo "Issue event triggered {{githhub.event.action}}"
+          echo "Issue event triggered ${{github.event.action}}"
           echo "Issue titlte: ${{ github.event.issue.title }}"
           echo "Issue body: ${{ github.event.issue.body }}"
           echo "Issue number: ${{ github.event.issue.number }}"
