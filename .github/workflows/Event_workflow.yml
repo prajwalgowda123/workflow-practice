@@ -2,7 +2,6 @@ name: event_workflow
 on:
   issues:
     types: [opened, edited, closed]
-    branches: [main]
 jobs:
   event_job:
     runs-on: ubuntu-latest
